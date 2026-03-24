@@ -58,15 +58,48 @@ Different organizations will participate in the Data Space. Some of them will ac
 
 ## FIWARE Components for Data Spaces
 
-<!-- This section is a draft and will be filled with detailed content later. -->
+The following section describes the open-source components that can be assembled to build a FIWARE Data Space. Each component fulfills one or more of the roles outlined in the architecture above — from connectors that mediate secure access to data products, through trust and identity services, to marketplaces that enable product discovery and contracting.
 
-### FIWARE Data Space Connector
+### Data Space Connectors
 
-<!-- TODO: Detailed description of the FIWARE DSC modules, deployment model, supported standards, and API compatibility -->
+A Data Space Connector allows organizations to to offer data products (a combination of data access, data transfer, data processing, or data visualization/interpretation services) and interact with participants that wish to reliably and securely consume the services associated with those products, in accordance with agreed terms and conditions
 
-### FIWARE Marketplace
+* The [FIWARE Data Space Connector](https://github.com/FIWARE/data-space-connector) brings together a set of open-source software components, some of them developed within the FIWARE Community, to allow organizations pariticpation in a Data Space in various roles(Provider, Consumer, Marketplace) 
+* [FDSC-EDC](https://github.com/SEAMWARE/fdsc-edc)
 
-<!-- TODO: Detailed description of the FIWARE BAE-based marketplace, its interaction with connectors, and the DOME project -->
+### Global Trust Registries
+
+* [Trusted Issuers List](https://github.com/FIWARE/trusted-issuers-list)
+* [On-Boarding Portal](https://github.com/SEAMWARE/On-Boarding-Portal)
+
+### Intermediary Systems
+
+* [BAE Marketplace](https://github.com/FIWARE-TMForum/Business-API-Ecosystem)
+* CKAN Publication:
+    * [CKAN-Extension TMForum](https://github.com/SEAMWARE/ckanext-tmforum)
+    * [CKAN-Extension DSIF](https://github.com/SEAMWARE/ckanext-dsif)
+    * [CKAN-Extension OID4VC](https://github.com/SEAMWARE/ckanext-oidc4vc)
+* [TMForum API](https://github.com/FIWARE/tmforum-api)
+* [Contract Management](https://github.com/FIWARE/contract-management)
+* [Orion-LD Context Broker](https://github.com/FIWARE/context.Orion-LD)
+* [Orion Context Broker](https://github.com/telefonicaid/fiware-orion)
+* [Scorpio Context Broker](https://github.com/ScorpioBroker/ScorpioBroker)
+* [Stellio Context Broker](https://github.com/stellio-hub/stellio-context-broker) 
+
+### Authentication and Authorization
+
+* [Decentralized IAM](https://github.com/FIWARE/decentralized-iam)
+* [ODRL-Authorization](https://github.com/FIWARE/odrl-authorization)
+* [VC-Authentication](https://github.com/FIWARE/vc-authentication)
+* [VCVerifier](github.com/FIWARE/VCVerifier)
+* [ODRL PAP](https://github.com/SEAMWARE/odrl-pap)
+* [Credentials-Config-Service](https://github.com/FIWARE/credentials-config-service)
+* [DID-Helper](https://github.com/SEAMWARE/did-helper)
+* [OID4VP-Client-Library](https://github.com/wistefan/oid4vp-client-lib)
+* [Keycloak](https://github.com/keycloak/keycloak)
+* [Apisx](https://apisix.apache.org/)
+* [Open Policy Agent](https://www.openpolicyagent.org/)
+
 
 ## License
 
